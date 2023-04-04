@@ -1,0 +1,246 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  /* color: white; */
+  font-family: "Space Mono", monospace;
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+html {
+  font-size: 62.5%;
+}
+#inputSection div {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+}
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 1rem;
+}
+body {
+  display: grid;
+  justify-items: center;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background-color: hsl(185, 41%, 84%);
+  align-content: center;
+  gap: 5rem;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  width: 55vw;
+  /* width: fit-content; */
+  align-items: center;
+  justify-items: center;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  color: hsl(184, 14%, 56%);
+  border-radius: 2rem;
+}
+#inputSection {
+  display: grid;
+  gap: 3rem;
+  grid-template-rows: 1fr 1.5fr 1fr;
+  justify-items: start;
+}
+.inputInfo {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  width: 100%;
+  background-color: hsl(189, 41%, 97%);
+  gap: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  place-items: center;
+}
+
+input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  text-align: end;
+}
+input::-webkit-input-placeholder {
+  color: hsla(183, 100%, 15%, 50%);
+  text-align: right;
+  font-size: 1.7rem;
+}
+
+input:-ms-input-placeholder {
+  color: hsla(183, 100%, 15%, 50%);
+  text-align: right;
+  font-size: 1.7rem;
+}
+
+input::placeholder {
+  color: hsla(183, 100%, 15%, 50%);
+  text-align: right;
+  font-size: 1.7rem;
+}
+#inputSection #tipPerCent {
+  list-style-type: none;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+}
+li {
+  align-content: center;
+  display: grid;
+  text-align: center;
+  vertical-align: middle;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  font-size: 1.6rem;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+#tipPerCent input {
+  background-color: hsl(189, 41%, 97%);
+  align-content: center;
+  display: grid;
+  text-align: center;
+  vertical-align: middle;
+  color: hsl(183, 100%, 15%);
+
+  font-size: 1.6rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+ul div {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  place-items: center;
+  background-color: #f4f9fa;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+}
+#tipPerCent input::-webkit-input-placeholder {
+  color: hsl(184, 14%, 56%);
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#tipPerCent input:-ms-input-placeholder {
+  color: hsl(184, 14%, 56%);
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#tipPerCent input::placeholder {
+  color: hsl(184, 14%, 56%);
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#outputSection {
+  display: grid;
+  background-color: hsl(183, 100%, 15%);
+  height: 100%;
+  width: 100%;
+  color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  align-content: space-between;
+}
+.totalTipDisplay {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.totalTipDisplay span {
+  text-align: end;
+  font-size: 4rem;
+  color: hsl(172, 67%, 45%);
+}
+.totalTipDisplay h3 {
+  color: hsl(184, 14%, 56%);
+}
+#outputSection button {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 1rem 0rem;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+}
+#tipPerCent .buttonClick {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  scale: 0.95;
+}
+@media screen and (max-width: 900px) {
+  main {
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  main {
+    width: 85vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+  main {
+    width: 99vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 62.5%;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+  #inputSection #tipPerCent {
+    list-style-type: none;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+  }
+  #outputSection {
+    gap: 3rem;
+  }
+  .totalTipDisplay {
+    display: grid;
+    gap: 0.5rem;
+  }
+  #outputSection span {
+    font-size: 3rem;
+  }
+}
